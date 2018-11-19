@@ -9,7 +9,7 @@
 	
 		<!-- <h1 disabled>Техномарт.Лучший интернет-магазин инструментов</h1>  как сделать этот заголовок активным но невидимым? -->
 		
-		<div class="up-1">
+		<div class="header-top">
 				<!-- Правильная ли реализация кнопок,нажатие на которые ведут на другие страницы? -->
 			<a href="#">Техномарт</a>
 			<!-- <p>Поиск</p>   <!-- Тут будет форма для ввода -->
@@ -20,25 +20,33 @@
 			
 		</div>
 		
-		<div class="up-2">
+		<div class="header-middle-bottom">
+			
 			<p><i>Интернет-магазин строительных материалов и инструментов для ремонта.</i></p>
 			
+			<!-- <h2>Быстрые контакты</h2> -->
+			<section class="header-contacts">
+				<b>+7(812)555-05-55</b>   <!-- как временно обернуть это правильно? -->
+				<p>г.Санкт-Петербург,ул Б.Конюшенная,д,19/8</p>
+			</section>
+			
 			<p>Равшан Джамшутович</p>
-			<ul>
+			<ul class="header-user-buttons">
 				<li><a href="#">Мои заказы</a></li>
 				<li><a href="#">Личный кабинет</a></li>
 			</ul>
 		
-		
-			<ul>
-				<li>Главная</li>
-				<li>Компания</li>
-				<li>Каталог</li>
-				<li>Новости</li>
-				<li>Спецпредложения</li>
-				<li>Доставка</li>
-				<li>Контакты</li>
-			</ul>
+			<nav class="header-navigation">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Компания</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Спецпредложения</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
 		
 		</div>
 	</header>
@@ -46,7 +54,7 @@
 	
 	
 	<main>
-		<ul>
+		<ul class="main-placing-menu">
 			<li><a href="#">Main page</a></li>
 			<li><a href="#">Каталог</a></li>
 			<li><a href="#">Инструмент</a></li>
@@ -54,7 +62,7 @@
 		</ul>
 		<h2>Перфораторы</h2>
 		
-		<div>
+		<div class="searching-menu">
 			<b>Производители:</b>
 			<ul>
 				<li>Bosch</li>
@@ -74,57 +82,119 @@
 			
 		</div>
 		
-		<section>
 			<ul>
-						<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-						<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-						<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-						<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-						<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-						<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-						<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-						<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-						<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
+				<li>
+						<img src="http://placehold.it/150x100">
+						<h3>Товар 1</h3>
+						<p><del>10000</del></p>
+						<a href="#">5000</a>
+						
+				</li>
+				
+				<li>
+						<img src="http://placehold.it/150x100">
+						<h3>Товар 2</h3>
+						<p><del>10000</del></p>
+						<a href="#">5000</a>
+						
+				</li>
+				
+				<li>
+						<img src="http://placehold.it/150x100">
+						<h3>Товар 3</h3>
+						<p><del>10000</del></p>
+						<a href="#">5000</a>
+						
+				</li>
+				
+				<li>
+						<img src="http://placehold.it/150x100">
+						<h3>Товар 4</h3>
+						<p><del>10000</del></p>
+						<a href="#">5000</a>
+						
+				</li>
+				
+				<li>
+						<img src="http://placehold.it/150x100">
+						<h3>Товар 5</h3>
+						<p><del>10000</del></p>
+						<a href="#">5000</a>
+						
+				</li>
+				
+				<li>
+						<img src="http://placehold.it/150x100">
+						<h3>Товар 6</h3>
+						<p><del>10000</del></p>
+						<a href="#">5000</a>
+						
+				</li>
+				
+				<li>
+						<img src="http://placehold.it/150x100">
+						<h3>Товар 7</h3>
+						<p><del>10000</del></p>
+						<a href="#">5000</a>
+						
+				</li>
+				
+				<li>
+						<img src="http://placehold.it/150x100">
+						<h3>Товар 8</h3>
+						<p><del>10000</del></p>
+						<a href="#">5000</a>
+						
+				</li>
+				
+				<li>
+						<img src="http://placehold.it/150x100">
+						<h3>Товар 9</h3>
+						<p><del>10000</del></p>
+						<a href="#">5000</a>
+						
+				</li>
 			</ul>
-		</section>
 		
 	</main>
 	
 	<hr>
 		
 		<footer>
-			
-			<div>
-				<section>
+			<!-- <h2>Основная информация и навигация</h2> -->
+			<section class="footer-top">
+				<div class="footer-contacts">
 					<img src="http://placehold.it/150x100">
 					<p>Г.Санкт-Петербург,ул Б.Конюшенная,д.19/8</p>
 					<p>+7(812)555-05-55</p>
-				</section>
+					<span>Map span</span>
+				</div>
 				
-				<section>
 					<ul>
 						<li><a href="#">Компания</a></li>
 						<li><a href="#">Новости</a></li>
 						<li><a href="#">Каталог</a></li>
 						<li><a href="#">Доставка</a></li>
 						<li><a href="#">Контакты</a></li>
+					</ul>
+					
+					<ul>
 						<li><a href="#">Материалы</a></li>
 						<li><a href="#">Техника</a></li>
 						<li><a href="#">Инструмент</a></li>
 						<li><a href="#">Спецпредложения</a></li>
 					</ul>
-				</section>
 				
-			</div>
+			</section>
 			
-			<div>
+			<section class="footer-bottom">
 				
-				<section>
+				<div class="footer-copyright">
 					<p>2010-2017 Компания "Техномарт"</p>
 					<p>Все права защищены</p>
-				</section>
+				</div>
 				
-				<section>
+				<div class="footer-media-production">
 					<ul>
 						<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
 						<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
@@ -139,9 +209,9 @@
 						<dd>htmlacademy.ru</dd>
 					</dl>
 					
-				</section>
+				</div>
 				
-			</div>
+			</section>
 			
 		</footer>
 	
