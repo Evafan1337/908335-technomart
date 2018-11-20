@@ -24,17 +24,21 @@
 			
 			<p><i>Интернет-магазин строительных материалов и инструментов для ремонта.</i></p>
 			
-			<!-- <h2>Быстрые контакты</h2> -->
+			
 			<section class="header-contacts">
-				<b>+7(812)555-05-55</b>   <!-- как временно обернуть это правильно? -->
+			<!-- <h2>Быстрая связь с нами.</h2> -->
+				<a href="#">+7(812)555-05-55</a>   
 				<p>г.Санкт-Петербург,ул Б.Конюшенная,д,19/8</p>
 			</section>
 			
-			<p>Равшан Джамшутович</p>
-			<ul class="header-user-buttons">
-				<li><a href="#">Мои заказы</a></li>
-				<li><a href="#">Личный кабинет</a></li>
-			</ul>
+			<div class="header-user-options">
+				<p>Равшан Джамшутович</p>
+				<ul class="header-user-buttons">
+					<li><a href="#">Мои заказы</a></li>
+					<li><a href="#">Личный кабинет</a></li>
+				</ul>
+			</div>
+				
 		
 			<nav class="header-navigation">
 				<ul>
@@ -54,115 +58,126 @@
 	
 	
 	<main>
-		<ul class="main-placing-menu">
-			<li><a href="#">Main page</a></li>
-			<li><a href="#">Каталог</a></li>
-			<li><a href="#">Инструмент</a></li>
-			<li><a href="#">Перфораторы</a></li>
-		</ul>
-		<h2>Перфораторы</h2>
-		
-		<div class="searching-menu">
-			<b>Производители:</b>
-			<ul>
-				<li>Bosch</li>
-				<li>Интерскол</li>
-				<li>Makita</li>
-				<li>Dewalt</li>
-				<li>Hitachi</li>
+		<section class="main-catalog-full">  <!-- Если в main будет еще контент,то думаю будет неплохой идеей разметить целую секцию под "подбор" товара? -->
+		<!-- <h2>Ознакомьтесь с нашими товарами!</h2> -->
+			<ul class="main-breadcrumbs ">
+				<li><a href="#">Main page</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Инструмент</a></li>
+				<li><a href="#">Перфораторы</a></li>
 			</ul>
 			
-			<b>Питание:</b>
-			<ul>
-				<li>Аккумуляторные</li>
-				<li>Сетевые</li>
-			</ul>
+			<span class="main-filter-by-price">
+			</span>
+			<!-- Устраивает ли такой вариант разметки незнакомых вещей? -->
+			<span class="main-sorting">
+			</span>
 			
-			<button href="#">Показать</button>
+			<h2>Перфораторы</h2>
 			
-		</div>
-		
-			<ul>
-				<li>
-						<img src="http://placehold.it/150x100">
-						<h3>Товар 1</h3>
-						<p><del>10000</del></p>
-						<a href="#">5000</a>
-						
-				</li>
+			<div class="main-searching-menu">
+				<div class="main-searching-menu-producer">
+					<b>Производители:</b>
+					<ul>
+						<li>Bosch</li>
+						<li>Интерскол</li>
+						<li>Makita</li>
+						<li>Dewalt</li>
+						<li>Hitachi</li>
+					</ul>
+				</div>
 				
-				<li>
-						<img src="http://placehold.it/150x100">
-						<h3>Товар 2</h3>
-						<p><del>10000</del></p>
-						<a href="#">5000</a>
-						
-				</li>
+				<div class="main-searching-menu-power-supply">
+					<b>Питание:</b>
+					<ul>
+						<li>Аккумуляторные</li>
+						<li>Сетевые</li>
+					</ul>
+				</div>
 				
-				<li>
-						<img src="http://placehold.it/150x100">
-						<h3>Товар 3</h3>
-						<p><del>10000</del></p>
-						<a href="#">5000</a>
-						
-				</li>
+				<button href="#">Показать</button>
 				
-				<li>
-						<img src="http://placehold.it/150x100">
-						<h3>Товар 4</h3>
-						<p><del>10000</del></p>
-						<a href="#">5000</a>
+			</div>
+			
+					<ul>
+						<li>
+								<img src="http://placehold.it/150x100">
+								<h3>Перфоратор BOSCH BFG 3000</h3>
+								<p><del>22500 Р.</del></p>
+								<a href="#">15500 Р.</a>
+								
+						</li>
 						
-				</li>
-				
-				<li>
-						<img src="http://placehold.it/150x100">
-						<h3>Товар 5</h3>
-						<p><del>10000</del></p>
-						<a href="#">5000</a>
+						<li>
+								<img src="http://placehold.it/150x100">
+								<h3>Перфоратор BOSCH BFG 3000</h3>
+								<p><del>22500 Р.</del></p>
+								<a href="#">15500 Р.</a>
+								
+						</li>
 						
-				</li>
-				
-				<li>
-						<img src="http://placehold.it/150x100">
-						<h3>Товар 6</h3>
-						<p><del>10000</del></p>
-						<a href="#">5000</a>
+						<li>
+								<img src="http://placehold.it/150x100">
+								<h3>Перфоратор BOSCH BFG 3000</h3>
+								<p><del>22500 Р.</del></p>
+								<a href="#">15500 Р.</a>
+								
+						</li>
 						
-				</li>
-				
-				<li>
-						<img src="http://placehold.it/150x100">
-						<h3>Товар 7</h3>
-						<p><del>10000</del></p>
-						<a href="#">5000</a>
+						<li>
+								<img src="http://placehold.it/150x100">
+								<h3>Перфоратор BOSCH BFG 6000</h3>
+								<p><del>30500 Р.</del></p>
+								<a href="#">25500 Р.</a>
+								
+						</li>
 						
-				</li>
-				
-				<li>
-						<img src="http://placehold.it/150x100">
-						<h3>Товар 8</h3>
-						<p><del>10000</del></p>
-						<a href="#">5000</a>
+						<li>
+								<img src="http://placehold.it/150x100">
+								<h3>Перфоратор BOSCH BFG 6000</h3>
+								<p><del>30500 Р.</del></p>
+								<a href="#">25500 Р.</a>
+								
+						</li>
 						
-				</li>
-				
-				<li>
-						<img src="http://placehold.it/150x100">
-						<h3>Товар 9</h3>
-						<p><del>10000</del></p>
-						<a href="#">5000</a>
+						<li>
+								<img src="http://placehold.it/150x100">
+								<h3>Перфоратор BOSCH BFG 6000</h3>
+								<p><del>30500 Р.</del></p>
+								<a href="#">25500 Р.</a>
+								
+						</li>
 						
-				</li>
-			</ul>
-		
+						<li>
+								<img src="http://placehold.it/150x100">
+								<h3>Перфоратор BOSCH BFG 2000</h3>
+								<a href="#">12500 Р.</a>
+								
+						</li>
+						
+						<li>
+								<img src="http://placehold.it/150x100">
+								<h3>Перфоратор BOSCH BFG 2000</h3>
+								<a href="#">12500 Р.</a>
+								
+						</li>
+						
+						<li>
+								<img src="http://placehold.it/150x100">
+								<h3>Перфоратор BOSCH BFG 2000</h3>
+								<a href="#">12500 Р.</a>
+								
+						</li>
+					</ul>
+		</section>
 	</main>
 	
 	<hr>
 		
 		<footer>
-			<!-- <h2>Основная информация и навигация</h2> -->
+			
 			<section class="footer-top">
+			<!-- <h2>Основная информация и навигация.</h2> -->
 				<div class="footer-contacts">
 					<img src="http://placehold.it/150x100">
 					<p>Г.Санкт-Петербург,ул Б.Конюшенная,д.19/8</p>
@@ -188,6 +203,7 @@
 			</section>
 			
 			<section class="footer-bottom">
+			<!-- <h2>Права и реквизиты.</h2> -->
 				
 				<div class="footer-copyright">
 					<p>2010-2017 Компания "Техномарт"</p>
