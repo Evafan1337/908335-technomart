@@ -13,7 +13,7 @@
 				<!-- Правильная ли реализация кнопок,нажатие на которые ведут на другие страницы? -->
 			<a href="#">Техномарт</a>
 			<!-- <p>Поиск</p>   <!-- Тут будет форма для ввода -->
-			<span>Поиск</span>
+			<span tabindex="0">Поиск</span>
 			<a href="#">Закладки</a>
 			<a href="#">Корзина</a>
 			<a href="#">Оформить заказ</a>
@@ -76,26 +76,47 @@
 			<h2>Перфораторы</h2>
 			
 			<div class="main-searching-menu">
-				<div class="main-searching-menu-producer">
-					<b>Производители:</b>
-					<ul>
-						<li>Bosch</li>
-						<li>Интерскол</li>
-						<li>Makita</li>
-						<li>Dewalt</li>
-						<li>Hitachi</li>
-					</ul>
-				</div>
-				
-				<div class="main-searching-menu-power-supply">
-					<b>Питание:</b>
-					<ul>
-						<li>Аккумуляторные</li>
-						<li>Сетевые</li>
-					</ul>
-				</div>
-				
-				<button href="#">Показать</button>
+				<form method="post">
+					<b>Производители:<b><br>
+					<label>
+						Bosch
+						<input type="checkbox" name="bosch">
+					</label><br>
+					
+					<label>
+						Интерскол
+						<input type="checkbox" name="Interskol">
+					</label><br>
+					
+					<label>
+						Makita
+						<input type="checkbox" name="Makita">
+					</label><br>
+					
+					<label>
+						Dewalt
+						<input type="checkbox" name="Dewalt">
+					</label><br>
+					
+					<label>
+						Hitachi
+						<input type="checkbox" name="Hitachi">
+					</label><br>
+					
+					<b>Питание:<b><br>
+					
+					<label>
+						Аккумуляторные
+						<input type="radio" name="power-supply">
+					</label><br>
+					
+					<label>
+						Сетевые
+						<input type="radio" name="power-supply">
+					</label><br>
+					
+					<input type="submit" value="Показать">
+				</form>
 				
 			</div>
 			
@@ -182,7 +203,7 @@
 					<img src="http://placehold.it/150x100">
 					<p>Г.Санкт-Петербург,ул Б.Конюшенная,д.19/8</p>
 					<p>+7(812)555-05-55</p>
-					<img src="img/5.jpg" width="300px" height="158px" >
+					<img src="img/5.jpg" width="300px" height="158px" tabindex="0">
 				</div>
 				
 					<ul>
@@ -219,10 +240,10 @@
 					
 					<dl>
 						<dt>Обратная связь:</dd>
-						<dd>mail@htmlacademy.ru</dd>
+						<dd tabindex="0">mail@htmlacademy.ru</dd>
 						
 						<dt>Разработано-</dt>
-						<dd>htmlacademy.ru</dd>
+						<dd tabindex="0">htmlacademy.ru</dd>
 					</dl>
 					
 				</div>
