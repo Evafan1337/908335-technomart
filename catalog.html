@@ -32,6 +32,7 @@
 			</section>
 			
 			<div class="header-user-options">
+				<span class="visibility-hidden">Пользовательский профиль</span>
 				<p>Равшан Джамшутович</p>
 				<ul class="header-user-buttons">
 					<li><a href="#">Мои заказы</a></li>
@@ -39,7 +40,7 @@
 				</ul>
 			</div>
 				
-		
+			<span class="visibility-hidden">Кнопки навигации</span>
 			<nav class="header-navigation">
 				<ul>
 					<li><a href="#">Главная</a></li>
@@ -60,6 +61,7 @@
 	<main>
 		<section class="main-catalog-full">  <!-- Если в main будет еще контент,то думаю будет неплохой идеей разметить целую секцию под "подбор" товара? -->
 		<!-- <h2>Ознакомьтесь с нашими товарами!</h2> -->
+			<span class="visibility-hidden">Текущее местоположение на сайте</span>
 			<ul class="main-breadcrumbs ">
 				<li><a href="#">Main page</a></li>
 				<li><a href="#">Каталог</a></li>
@@ -76,6 +78,7 @@
 			<h2>Перфораторы</h2>
 			
 			<div class="main-searching-menu">
+				<span class="visibility-hidden">Сортировка товаров по критериям</span>
 				<form method="post">
 					<b>Производители:<b><br>
 					<label>
@@ -119,7 +122,7 @@
 				</form>
 				
 			</div>
-			
+					<span class="visibility-hidden">Товары на текущей странице</span>
 					<ul>
 						<li>
 								<img src="img/snippet-18927-copy-2.jpg" width="127px" height="112px">
@@ -205,7 +208,8 @@
 					<p>+7(812)555-05-55</p>
 					<img src="img/5.jpg" width="300px" height="158px" tabindex="0">
 				</div>
-				
+					
+					<span class="visibility-hidden">Кнопки для навигации</span>
 					<ul>
 						<li><a href="#">Компания</a></li>
 						<li><a href="#">Новости</a></li>
@@ -232,18 +236,30 @@
 				</div>
 				
 				<div class="footer-media-production">
-					<ul>
-						<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-						<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-						<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
+				<span class="visibility-hidden">Переход на соцсети</span>
+					<ul class="footer-socialmedia">
+						<li>
+							<span class="visibility-hidden">"Вконтакте"</span>
+							<a href="#"><img src="http://placehold.it/150x100"></a>
+						</li>
+						
+						<li>
+							<span class="visibility-hidden">"Facebook"</span>
+							<a href="#"><img src="http://placehold.it/150x100"></a>
+						</li>
+						
+						<li>
+							<span class="visibility-hidden">"Instagram"</span>
+							<a href="#"><img src="http://placehold.it/150x100"></a>
+						</li>
 					</ul>
 					
-					<dl>
+					<dl class="footer-production">
 						<dt>Обратная связь:</dd>
-						<dd tabindex="0">mail@htmlacademy.ru</dd>
+						<dd>mail@htmlacademy.ru</dd>
 						
 						<dt>Разработано-</dt>
-						<dd tabindex="0">htmlacademy.ru</dd>
+						<dd>htmlacademy.ru</dd>
 					</dl>
 					
 				</div>
@@ -251,6 +267,14 @@
 			</section>
 			
 		</footer>
+		
+		<hr>
+		<section class="popup-addstuff-in-cart">
+			<h2>Товар добавлен в корзину!</h2>
+			<!-- добавить галочку -->
+			<a href="#">Оформить заказ</a>
+			<button>Продолжить покупки</button>
+		</section>
 	
     <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
 

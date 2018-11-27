@@ -21,18 +21,20 @@
 			<p><i>Интернет-магазин строительных материалов и инструментов для ремонта.</i></p>
 			
 			<section class="header-contacts">
-				<!-- <h2>Быстрая связь с нами.</h2> -->
+				<!-- <h2>Быстрая связь с нами.</h2> -->  <!-- описание интерактива вместо span используется h2,можно?-->
 				<a href="#">+7(812)555-05-55</a>   
 				<p>г.Санкт-Петербург,ул Б.Конюшенная,д,19/8</p>
 			</section>
 			
 			
 			<ul class="header-user-buttons">
+				<span class="visibility-hidden">Кнопки для авторизации</span>
 				<li><a href="#">Войти</a></li>
 				<li><a href="#">Регистрация</a></li>
 			</ul>
 		
 			<nav class="header-navigation">
+			<span class="visibility-hidden">Кнопки навигации</span>
 				<ul>
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Компания</a></li>
@@ -207,6 +209,7 @@
 				</div>
 				
 				<div class="footer-nav">
+				<span class="visibility-hidden">Кнопки для навигации</span>
 					<ul>
 						<li><a href="#">Компания</a></li>
 						<li><a href="#">Новости</a></li>
@@ -235,10 +238,22 @@
 				</div>
 				
 				<div class="footer-media-production">
+				<span class="visibility-hidden">Переход на соцсети</span>
 					<ul class="footer-socialmedia">
-						<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-						<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-						<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
+						<li>
+							<span class="visibility-hidden">"Вконтакте"</span>
+							<a href="#"><img src="http://placehold.it/150x100"></a>
+						</li>
+						
+						<li>
+							<span class="visibility-hidden">"Facebook"</span>
+							<a href="#"><img src="http://placehold.it/150x100"></a>
+						</li>
+						
+						<li>
+							<span class="visibility-hidden">"Instagram"</span>
+							<a href="#"><img src="http://placehold.it/150x100"></a>
+						</li>
 					</ul>
 					
 					<dl class="footer-production">
@@ -254,6 +269,36 @@
 			</section>
 			
 		</footer>
+		
+		<hr>
+		<div class="changed-index">  <!-- Стоит ли тут все делать в одну обертку? -->
+		
+			<div class="bigmap-popup">
+				<span>Interactive map</span>
+			</div>
+			
+			<section class="feedback-popup-form">
+				<!-- <h2>Написать нам письмо</h2> -->
+				<form >
+					<label for="name-input">
+						Ваше имя:<br>
+						<input id="name-input" type="text" name="name" value="Имя Фамилия">
+					</label>
+					
+					<label for="email-input">
+						Ваш e-mail:<br>
+						<input id="email-input" type="text" name="email" value="email@example.com">
+					</label>
+					
+					<label for="letter-input">
+						Текст письма:<br>
+						<textarea id="letter-input"  name="letter" rows="4">
+							В свободной форме
+						</textarea>
+					</label>
+				</form>
+			</section>
+		</div>
 	
     <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
 
