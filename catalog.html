@@ -79,44 +79,39 @@
 			
 			<div class="main-searching-menu">
 				<span class="visibility-hidden">Сортировка товаров по критериям</span>
-				<form method="post">
-					<b>Производители:<b><br>
-					<label>
+				<form method="get" action="https://echo.htmlacademy.ru">
+					<br><b>Производители:<b>
+					<label for="production-bosch">
 						Bosch
-						<input type="checkbox" name="bosch">
-					</label><br>
+						<input id="production-bosch" type="checkbox" name="bosch">
 					
-					<label>
+					<label for="production-interskol">
 						Интерскол
-						<input type="checkbox" name="Interskol">
-					</label><br>
+						<input id="production-interskol" type="checkbox" name="Interskol">
 					
-					<label>
+					<label for="production-makita">
 						Makita
-						<input type="checkbox" name="Makita">
-					</label><br>
+						<input id="production-makita" type="checkbox" name="Makita">
 					
-					<label>
+					<label for="production-Dewalt">
 						Dewalt
 						<input type="checkbox" name="Dewalt">
-					</label><br>
+			
 					
-					<label>
+					<label for="production-hitachi">
 						Hitachi
-						<input type="checkbox" name="Hitachi">
-					</label><br>
+						<input id="production-hitachi" type="checkbox" name="Hitachi">
 					
-					<b>Питание:<b><br>
 					
-					<label>
+					<br><b>Питание:<b>
+					
+					<label for="production-supply-of">
 						Аккумуляторные
-						<input type="radio" name="power-supply">
-					</label><br>
+						<input id="production-supply-of" type="radio" name="power-supply">
 					
-					<label>
 						Сетевые
-						<input type="radio" name="power-supply">
-					</label><br>
+						<input id="production-supply-of" type="radio" name="power-supply">
+					
 					
 					<input type="submit" value="Показать">
 				</form>

@@ -279,23 +279,26 @@
 			
 			<section class="feedback-popup-form">
 				<!-- <h2>Написать нам письмо</h2> -->
-				<form >
+				<form method="get" action="https://echo.htmlacademy.ru"> 
 					<label for="name-input">
-						Ваше имя:<br>
+						Ваше имя:
 						<input id="name-input" type="text" name="name" value="Имя Фамилия">
-					</label>
+					
 					
 					<label for="email-input">
-						Ваш e-mail:<br>
+						Ваш e-mail:
 						<input id="email-input" type="text" name="email" value="email@example.com">
-					</label>
+					
 					
 					<label for="letter-input">
-						Текст письма:<br>
+						Текст письма:
 						<textarea id="letter-input"  name="letter" rows="4">
 							В свободной форме
 						</textarea>
-					</label>
+					
+					
+					<input type="submit" value="Отправить">
+					
 				</form>
 			</section>
 		</div>
