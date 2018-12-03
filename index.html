@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    
   </head>
-  <body>
-	<header>
+  <body class="inner-page">
+	<header class="header-page">
 	
 		<div class="header-top">
 			<a href="#">Техномарт</a>
@@ -18,25 +21,24 @@
 		</div>
 		
 		<div class="header-middle-bottom">
-			<p><i>Интернет-магазин строительных материалов и инструментов для ремонта.</i></p>
+			<p><i class="header-italic-text">Интернет-магазин строительных материалов и инструментов для ремонта.</i></p>
 			
 			<section class="header-contacts">
 				<!-- <h2>Быстрая связь с нами.</h2> -->  <!-- описание интерактива вместо span используется h2,можно?-->
-				<a href="#">+7(812)555-05-55</a>   
-				<p>г.Санкт-Петербург,ул Б.Конюшенная,д,19/8</p>
+				<a href="#"><span class="header-contacts-phone">+7(812)555-05-55</span></a>   
+				<p class="header-contacts-adress">г.Санкт-Петербург,ул Б.Конюшенная,д,19/8</p>
 			</section>
 			
-			
-			<ul class="header-user-buttons">
-				<span class="visibility-hidden">Кнопки для авторизации</span>
+			<span class="visibility-hidden">Кнопки для авторизации</span>
+			<ul class="header-user-links">
 				<li><a href="#">Войти</a></li>
 				<li><a href="#">Регистрация</a></li>
 			</ul>
 		
 			<nav class="header-navigation">
 			<span class="visibility-hidden">Кнопки навигации</span>
-				<ul>
-					<li><a href="#">Главная</a></li>
+				<ul class="header-navigation-links">
+					<li ><a href="#">Главная</a></li>
 					<li><a href="#">Компания</a></li>
 					<li><a href="#">Каталог</a></li>
 					<li><a href="#">Новости</a></li>
@@ -203,14 +205,14 @@
 			<!-- <h2>Основная информация и навигация.</h2> -->
 				<div class="footer-contacts">
 					<img src="http://placehold.it/150x100">
-					<p>Г.Санкт-Петербург,ул Б.Конюшенная,д.19/8</p>
-					<p>+7(812)555-05-55</p>
+					<p class="footer-info">Г.Санкт-Петербург,ул Б.Конюшенная,д.19/8</p>
+					<p class="footer-info">+7(812)555-05-55</p>
 					<img src="img/5.jpg" width="300px" height="158px" tabindex="0">
 				</div>
 				
 				<div class="footer-nav">
 				<span class="visibility-hidden">Кнопки для навигации</span>
-					<ul>
+					<ul class="footer-navigation-links">
 						<li><a href="#">Компания</a></li>
 						<li><a href="#">Новости</a></li>
 						<li><a href="#">Каталог</a></li>
@@ -218,7 +220,7 @@
 						<li><a href="#">Контакты</a></li>
 					</ul>
 					
-					<ul>
+					<ul class="footer-navigation-goods">
 						<li><a href="#">Материалы</a></li>
 						<li><a href="#">Техника</a></li>
 						<li><a href="#">Инструмент</a></li>

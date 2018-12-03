@@ -1,0 +1,127 @@
+
+.visibility-hidden
+{
+	visibility:hidden;
+}
+
+body
+{
+		/*типографика*/
+	font-family: 'Cuprum',sans-serif;
+	font-size:17px;
+		
+		/*оформление*/
+	background-color:#ffffff;
+}
+
+.header-top
+{
+	background-color:#293449;
+}
+
+
+.header-top a
+{
+	color:#ffffff;
+}
+
+.header-top span
+{
+	color:#ffffff;
+}
+
+
+
+.header-middle-bottom
+{
+	background-color:#c3cbd2;
+}
+
+.header-italic-text
+{
+	font-size:16px;
+	
+	color:#ee3643;
+}
+
+ /*write active and other*/
+.header-contacts-phone
+{
+	font-size:21px;
+	
+	color:#ee3643;
+}
+
+.header-contacts-adress
+{
+	font-size:14px;
+	
+	color:#32425c;
+}
+
+
+.header-user-links
+{
+	list-style-type:none;
+	
+}
+
+
+.header-user-links a
+{
+	color:#000000
+}
+
+
+.header-navigation-links
+{
+	list-style-type:none;
+}
+
+.header-navigation-links a
+{
+	color:#ffffff;
+}
+
+
+.footer-top
+{
+	background-color:#32425c;
+}
+
+
+.footer-bottom
+{
+		background-color:#293449;
+}
+
+.footer-info
+{
+	font-size:18px;
+	
+	color:#ffffff;
+}
+
+.footer-navigation-links
+{
+	list-style-type:none;
+}
+
+.footer-navigation-links a
+{
+	font-size:18px;
+	
+	color:white;
+}
+
+.footer-navigation-goods
+{
+	list-style-type:none;
+}
+
+.footer-navigation-goods a
+{
+	font-size:18px;
+	
+	color:#ffd180;
+}
