@@ -19,10 +19,28 @@ body
 	background-color:#293449;
 }
 
+.header-top-logo
+{
+	display:inline-block;
+	width:220px;
+	text-align:center;
+	
+	background-color:#ee3643;
+	box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+}
+
+.header-top a + span
+{
+	display:inline-block;
+	width:210px;
+	text-align:left;	
+	background-image:url("img/icon-search.svg");
+}
 
 .header-top a
 {
 	color:#ffffff;
+	text-decoration: none;
 }
 
 .header-top span
@@ -45,11 +63,13 @@ body
 }
 
  /*write active and other*/
-.header-contacts-phone
+.header-contacts a
 {
 	font-size:21px;
 	
 	color:#ee3643;
+	text-decoration: none;
+
 }
 
 .header-contacts-adress
@@ -69,7 +89,8 @@ body
 
 .header-user-links a
 {
-	color:#000000
+	color:#000000;
+	text-decoration: none;
 }
 
 
@@ -81,8 +102,8 @@ body
 .header-navigation-links a
 {
 	color:#ffffff;
+	text-decoration: none;
 }
-
 
 .footer-top
 {
@@ -112,6 +133,7 @@ body
 	font-size:18px;
 	
 	color:white;
+	text-decoration: none;
 }
 
 .footer-navigation-goods
@@ -124,4 +146,5 @@ body
 	font-size:18px;
 	
 	color:#ffd180;
+	text-decoration: none;
 }
