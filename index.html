@@ -14,14 +14,14 @@
 			<a href="#" class="header-top-logo"><img src="img/technomart.svg"></a>
 			<!-- <p>Поиск</p>   <!-- Тут будет форма для ввода -->
 			<span tabindex="0">Поиск</span>
-			<a href="#">Закладки</a>
-			<a href="#">Корзина</a>
-			<a href="#">Оформить заказ</a>
+			<a href="#" class="header-top-favorites">Закладки</a>
+			<a href="#" class="header-top-cart">Корзина</a>
+			<a href="#" class="header-top-order">Оформить заказ</a>
 			
 		</div>
 		
 		<div class="header-middle-bottom">
-			<p><i class="header-italic-text">Интернет-магазин строительных материалов и инструментов для ремонта.</i></p>
+			<p class="header-txt"><i class="header-italic-text">Интернет-магазин строительных материалов и инструментов для ремонта.</i></p>
 			
 			<section class="header-contacts">
 				<!-- <h2>Быстрая связь с нами.</h2> -->  <!-- описание интерактива вместо span используется h2,можно?-->
@@ -31,14 +31,14 @@
 			
 			<span class="visibility-hidden">Кнопки для авторизации</span>
 			<ul class="header-user-links">
-				<li><a href="#">Войти</a></li>
-				<li><a href="#">Регистрация</a></li>
+				<li><a href="#"class="header-user-links-sign">Войти</a></li>
+				<li><a href="#"class="header-user-links-reg">Регистрация</a></li>
 			</ul>
 		
 			<nav class="header-navigation">
 			<span class="visibility-hidden">Кнопки навигации</span>
 				<ul class="header-navigation-links">
-					<li ><a href="#">Главная</a></li>
+					<li><a href="#">Главная</a></li>
 					<li><a href="#">Компания</a></li>
 					<li><a href="#">Каталог</a></li>
 					<li><a href="#">Новости</a></li>
@@ -204,7 +204,8 @@
 			<section class="footer-top">
 			<!-- <h2>Основная информация и навигация.</h2> -->
 				<div class="footer-contacts">
-					<img src="http://placehold.it/150x100">
+				<!-- <img src="http://placehold.it/150x100"> -->
+					<span>Техномарт</span>
 					<p class="footer-info">Г.Санкт-Петербург,ул Б.Конюшенная,д.19/8</p>
 					<p class="footer-info">+7(812)555-05-55</p>
 					<img src="img/5.jpg" width="300px" height="158px" tabindex="0">
@@ -243,27 +244,30 @@
 				<span class="visibility-hidden">Переход на соцсети</span>
 					<ul class="footer-socialmedia">
 						<li>
-							<span class="visibility-hidden">"Вконтакте"</span>
-							<a href="#"><img src="http://placehold.it/150x100"></a>
+							<div class="footer-soc-links">
+								<img src="img/vk-icon.svg">
+							</div>
+						</li>
+					
+						<li>
+							<div class="footer-soc-links">
+								<img src="img/fb-icon.svg">
+							</div>
 						</li>
 						
 						<li>
-							<span class="visibility-hidden">"Facebook"</span>
-							<a href="#"><img src="http://placehold.it/150x100"></a>
-						</li>
-						
-						<li>
-							<span class="visibility-hidden">"Instagram"</span>
-							<a href="#"><img src="http://placehold.it/150x100"></a>
+							<div class="footer-soc-links">
+								<img src="img/insta-icon.svg">
+							</div>
 						</li>
 					</ul>
 					
 					<dl class="footer-production">
-						<dt>Обратная связь:</dd>
-						<dd>mail@htmlacademy.ru</dd>
+						<dt>Обратная связь:</dt>
+						<dd><a href="#">mail@htmlacademy.ru</a></dd>
 						
 						<dt>Разработано-</dt>
-						<dd>htmlacademy.ru</dd>
+						<dd><a href="#">htmlacademy.ru</a></dd>
 					</dl>
 					
 				</div>

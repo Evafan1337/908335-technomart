@@ -14,15 +14,24 @@ body
 	background-color:#ffffff;
 }
 
+.header-page
+{
+	
+}
+
 .header-top
 {
+	height:42px;
+	
 	background-color:#293449;
 }
 
 .header-top-logo
 {
 	display:inline-block;
+	margin:0;
 	width:220px;
+	height:47px;
 	text-align:center;
 	
 	background-color:#ee3643;
@@ -32,7 +41,7 @@ body
 .header-top a + span
 {
 	display:inline-block;
-	width:210px;
+	width:285px;
 	text-align:left;	
 	background-image:url("img/icon-search.svg");
 }
@@ -43,11 +52,77 @@ body
 	text-decoration: none;
 }
 
+
 .header-top span
 {
 	color:#ffffff;
 }
 
+.header-top span:hover
+{
+	
+}
+
+.header-top span:active
+{
+	color:rgba(255, 255, 255, 0.6);
+}
+
+
+.header-top-favorites
+{
+	display:inline-block;
+	width:150px;
+}
+
+.header-top-favorites:hover
+{
+	
+}
+
+.header-top-favorites:active
+{
+	color:rgba(255, 255, 255, 0.6);
+}
+
+
+
+.header-top-cart
+{
+	display:inline-block;
+	width:150px;
+}
+
+.header-top-cart:hover
+{
+	
+}
+
+.header-top-cart:active
+{
+	color:rgba(255, 255, 255, 0.6);
+}
+
+.header-top-order  /* костыльное оформление заказа и неизвестный сдвиг вниз,убираемый паддингом */
+{
+	display:inline-block;
+	width:150px;
+	height:39px;
+	padding-top:3px;
+	
+	background-color:#63a63e;
+}
+
+.header-top-order:hover
+{
+	background-color:#5fbb2d;
+}
+
+.header-top-order:active
+{
+	background-color:#518534;
+	color:rgba(255, 255, 255, 0.5)
+}
 
 
 .header-middle-bottom
@@ -55,8 +130,20 @@ body
 	background-color:#c3cbd2;
 }
 
+.header-middle-bottom>p
+{
+	margin:0px;
+}
+
+.header-txt
+{
+	width:190px;
+}
+
 .header-italic-text
 {
+	
+	
 	font-size:16px;
 	
 	color:#ee3643;
@@ -65,10 +152,16 @@ body
  /*write active and other*/
 .header-contacts a
 {
+	display:inline-block;
+	width:270px;
+	height:45px;
+	
 	font-size:21px;
+	text-align:center;
 	
 	color:#ee3643;
 	text-decoration: none;
+	border:3px solid white;
 
 }
 
@@ -82,22 +175,98 @@ body
 
 .header-user-links
 {
+	display:block;
+	
 	list-style-type:none;
+	
 	
 }
 
 
 .header-user-links a
 {
+	display:inline-block;
+	
 	color:#000000;
 	text-decoration: none;
+	background-color:#f4f7f9;
 }
+
+.header-user-links-sign
+{
+	height:45px;
+	width:120px;
+}
+
+.header-user-links-sign:hover
+{
+	color:#ee3643;
+}
+
+.header-user-links-sign:active
+{
+	color:rgba(0, 0, 0, 0.3);
+}
+
+.header-user-links-reg
+{
+	height:45px;
+	width:150px;
+}
+
+.header-user-links-reg:hover
+{
+	color:#ee3643;
+}
+
+.header-user-links-reg:active
+{
+	color:rgba(0, 0, 0, 0.3);
+}
+
 
 
 .header-navigation-links
 {
 	list-style-type:none;
 }
+
+.header-navigation-links a
+{
+	display:inline-block;
+	width:inherit;
+	height:inherit;
+}
+
+.header-navigation-links li  /* временное определение кнопок меню */
+{	
+	width:150px;
+	height:50px;
+	margin-bottom:5px;
+	
+	text-align:center;
+	
+	background-color:#32425c;
+	box-shadow: inset 0px -5px 0 0 #293449;
+}
+
+.header-navigation-links a:hover
+{
+	background-color:#293449;
+}
+
+.header-navigation-links a:focus
+{
+	background-color:#293449;
+}
+
+.header-navigation-links a:active
+{	
+	color: rgba(255, 255, 255, 0.5); 
+	background-color:#293449;
+}
+
+
 
 .header-navigation-links a
 {
@@ -123,6 +292,21 @@ body
 	color:#ffffff;
 }
 
+.footer-contacts span
+{
+	display:inline-block;
+	width:220px;
+	height:68px;
+	
+	font-size:30px;
+	text-align:center;
+	font-style: normal;
+	
+	color:#ffffff;
+	background-color:#ee3643;
+	box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+}
+
 .footer-navigation-links
 {
 	list-style-type:none;
@@ -136,6 +320,17 @@ body
 	text-decoration: none;
 }
 
+.footer-navigation-links a:hover
+{
+	text-decoration:underline;
+}
+
+.footer-navigation-links a:active
+{
+	text-decoration: none;
+	color:rgba(241, 245, 247, 0.5);
+}
+
 .footer-navigation-goods
 {
 	list-style-type:none;
@@ -147,4 +342,62 @@ body
 	
 	color:#ffd180;
 	text-decoration: none;
+}
+
+.footer-navigation-goods a:hover
+{
+	text-decoration:underline;
+}
+
+.footer-navigation-goods a:active
+{
+	text-decoration: none;
+	color:rgba(255, 209, 128, 0.5)
+}
+
+.footer-socialmedia
+{
+	list-style:none;
+}
+
+.footer-copyright p
+{
+	color:#ffffff;
+}
+
+.footer-production dt
+{
+	color:#ffffff;
+}
+
+.footer-production a
+{
+	color:#ffd180;
+	text-decoration:none;
+}
+
+.footer-production a:hover
+{
+	text-decoration:underline;
+}
+
+.footer-production a:active
+{
+	text-decoration:none;
+	color:#ee3643;
+}
+
+.footer-soc-links
+{
+	display:inline-block;
+	
+	padding:10px; /* прикинутый паддинг для вида ховера и актива */
+	
+	background-color:#212a3a;
+	border-radius:25px;
+}
+
+.footer-soc-links:hover
+{
+	background-color:#ee3643;
 }

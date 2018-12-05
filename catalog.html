@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+	<link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
 	<header>
@@ -10,19 +12,18 @@
 		<!-- <h1 disabled>Техномарт.Лучший интернет-магазин инструментов</h1>  как сделать этот заголовок активным но невидимым? -->
 		
 		<div class="header-top">
-				<!-- Правильная ли реализация кнопок,нажатие на которые ведут на другие страницы? -->
-			<a href="#">Техномарт</a>
+			<a href="#" class="header-top-logo"><img src="img/technomart.svg"></a>
 			<!-- <p>Поиск</p>   <!-- Тут будет форма для ввода -->
 			<span tabindex="0">Поиск</span>
-			<a href="#">Закладки</a>
-			<a href="#">Корзина</a>
-			<a href="#">Оформить заказ</a>
+			<a href="#" class="header-top-favorites">Закладки</a>
+			<a href="#" class="header-top-cart">Корзина</a>
+			<a href="#" class="header-top-order">Оформить заказ</a>
 			
 		</div>
 		
 		<div class="header-middle-bottom">
 			
-			<p><i>Интернет-магазин строительных материалов и инструментов для ремонта.</i></p>
+			<p class="header-txt"><i class="header-italic-text">Интернет-магазин строительных материалов и инструментов для ремонта.</i></p>
 			
 			
 			<section class="header-contacts">
@@ -42,7 +43,7 @@
 				
 			<span class="visibility-hidden">Кнопки навигации</span>
 			<nav class="header-navigation">
-				<ul>
+				<ul class="header-navigation-links">
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Компания</a></li>
 					<li><a href="#">Каталог</a></li>
@@ -190,19 +191,21 @@
 	
 	<hr>
 		
-		<footer>
+<footer>
 			
 			<section class="footer-top">
 			<!-- <h2>Основная информация и навигация.</h2> -->
 				<div class="footer-contacts">
-					<img src="http://placehold.it/150x100">
-					<p>Г.Санкт-Петербург,ул Б.Конюшенная,д.19/8</p>
-					<p>+7(812)555-05-55</p>
+				<!-- <img src="http://placehold.it/150x100"> -->
+					<span>Техномарт</span>
+					<p class="footer-info">Г.Санкт-Петербург,ул Б.Конюшенная,д.19/8</p>
+					<p class="footer-info">+7(812)555-05-55</p>
 					<img src="img/5.jpg" width="300px" height="158px" tabindex="0">
 				</div>
-					
-					<span class="visibility-hidden">Кнопки для навигации</span>
-					<ul>
+				
+				<div class="footer-nav">
+				<span class="visibility-hidden">Кнопки для навигации</span>
+					<ul class="footer-navigation-links">
 						<li><a href="#">Компания</a></li>
 						<li><a href="#">Новости</a></li>
 						<li><a href="#">Каталог</a></li>
@@ -210,17 +213,19 @@
 						<li><a href="#">Контакты</a></li>
 					</ul>
 					
-					<ul>
+					<ul class="footer-navigation-goods">
 						<li><a href="#">Материалы</a></li>
 						<li><a href="#">Техника</a></li>
 						<li><a href="#">Инструмент</a></li>
 						<li><a href="#">Спецпредложения</a></li>
 					</ul>
+					
+				</div>
 				
 			</section>
 			
 			<section class="footer-bottom">
-			<!-- <h2>Права и реквизиты.</h2> -->
+				<!-- <h2>Права и реквизиты.</h2> -->
 				
 				<div class="footer-copyright">
 					<p>2010-2017 Компания "Техномарт"</p>
@@ -231,27 +236,30 @@
 				<span class="visibility-hidden">Переход на соцсети</span>
 					<ul class="footer-socialmedia">
 						<li>
-							<span class="visibility-hidden">"Вконтакте"</span>
-							<a href="#"><img src="http://placehold.it/150x100"></a>
+							<div class="footer-soc-links">
+								<img src="img/vk-icon.svg">
+							</div>
+						</li>
+					
+						<li>
+							<div class="footer-soc-links">
+								<img src="img/fb-icon.svg">
+							</div>
 						</li>
 						
 						<li>
-							<span class="visibility-hidden">"Facebook"</span>
-							<a href="#"><img src="http://placehold.it/150x100"></a>
-						</li>
-						
-						<li>
-							<span class="visibility-hidden">"Instagram"</span>
-							<a href="#"><img src="http://placehold.it/150x100"></a>
+							<div class="footer-soc-links">
+								<img src="img/insta-icon.svg">
+							</div>
 						</li>
 					</ul>
 					
 					<dl class="footer-production">
-						<dt>Обратная связь:</dd>
-						<dd>mail@htmlacademy.ru</dd>
+						<dt>Обратная связь:</dt>
+						<dd><a href="#">mail@htmlacademy.ru</a></dd>
 						
 						<dt>Разработано-</dt>
-						<dd>htmlacademy.ru</dd>
+						<dd><a href="#">htmlacademy.ru</a></dd>
 					</dl>
 					
 				</div>
