@@ -22,16 +22,11 @@ body
 .header-top
 {
 	height:42px;
-	
 	background-color:#293449;
 }
 
 .header-top-logo
 {
-	display:inline-block;
-	margin:0;
-	width:220px;
-	height:47px;
 	text-align:center;
 	
 	background-color:#ee3643;
@@ -40,8 +35,6 @@ body
 
 .header-top a + span
 {
-	display:inline-block;
-	width:285px;
 	text-align:left;	
 	background-image:url("img/icon-search.svg");
 }
@@ -71,8 +64,7 @@ body
 
 .header-top-favorites
 {
-	display:inline-block;
-	width:150px;
+
 }
 
 .header-top-favorites:hover
@@ -89,8 +81,7 @@ body
 
 .header-top-cart
 {
-	display:inline-block;
-	width:150px;
+
 }
 
 .header-top-cart:hover
@@ -104,12 +95,7 @@ body
 }
 
 .header-top-order  /* костыльное оформление заказа и неизвестный сдвиг вниз,убираемый паддингом */
-{
-	display:inline-block;
-	width:150px;
-	height:39px;
-	padding-top:3px;
-	
+{	
 	background-color:#63a63e;
 }
 
@@ -142,8 +128,6 @@ body
 
 .header-italic-text
 {
-	
-	
 	font-size:16px;
 	
 	color:#ee3643;
@@ -152,9 +136,6 @@ body
  /*write active and other*/
 .header-contacts a
 {
-	display:inline-block;
-	width:270px;
-	height:45px;
 	
 	font-size:21px;
 	text-align:center;
@@ -175,18 +156,12 @@ body
 
 .header-user-links
 {
-	display:block;
-	
 	list-style-type:none;
-	
-	
 }
 
 
 .header-user-links a
 {
-	display:inline-block;
-	
 	color:#000000;
 	text-decoration: none;
 	background-color:#f4f7f9;
@@ -194,8 +169,7 @@ body
 
 .header-user-links-sign
 {
-	height:45px;
-	width:120px;
+	
 }
 
 .header-user-links-sign:hover
@@ -210,8 +184,7 @@ body
 
 .header-user-links-reg
 {
-	height:45px;
-	width:150px;
+
 }
 
 .header-user-links-reg:hover
@@ -224,7 +197,45 @@ body
 	color:rgba(0, 0, 0, 0.3);
 }
 
+.header-user-options a
+{
+	color:#000000;
+	background-color:#ffffff;
+	text-decoration:none;
+}
 
+.header-user-options a:hover
+{
+	
+}
+
+.header-user-options a:active
+{
+	color:rgba(0, 0, 0, 0.3);
+}
+
+.header-user-buttons li
+{
+	list-style:none;
+}
+
+.header-user-buttons a
+{
+	font-size:16px;
+	
+	color:#32425c;
+	list-style:none;
+}
+
+.header-user-buttons a:hover
+{
+	color:#ee3643;
+}
+
+.header-user-buttons a:active
+{
+	color:rgba(50, 66, 92, 0.3);
+}
 
 .header-navigation-links
 {
@@ -233,16 +244,11 @@ body
 
 .header-navigation-links a
 {
-	display:inline-block;
-	width:inherit;
-	height:inherit;
+
 }
 
-.header-navigation-links li  /* временное определение кнопок меню */
+.header-navigation-links a  /* временное определение кнопок меню */
 {	
-	width:150px;
-	height:50px;
-	margin-bottom:5px;
 	
 	text-align:center;
 	
@@ -279,10 +285,78 @@ body
 	background-color:#32425c;
 }
 
+/*catalog styles begin*/
+
+.main-breadcrumbs li
+{
+	font-family: 'PT Sans', sans-serif;
+	font-size:13px;
+	
+	list-style:none;
+}
+
+.main-catalog-full h2
+{
+	font-size:30px;
+	
+	background-color:#f2f6f8;
+}
+
+.main-searching-menu
+{
+	font-family:'PT Sans' , sans-serif;
+}
+
+.main-searching-menu b
+{
+	font-weight:700;
+}
+
+.main-searching-menu label
+{
+	font-weight:400;
+	font-size:15px;
+}
+
+
+.main-products
+{
+	font-family:'PT Sans' , sans-serif;
+	list-style:none;
+}
+
+.main-products li:hover /* заготовка под анимацию */
+{
+	box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.main-products h3
+{
+	font-weight:700;
+	font-size:18px;
+}
+
+.main-products del
+{
+	color:#999999;
+	
+}
+
+.main-products a
+{
+	color:#ffffff;
+	text-decoration:none;
+	
+	background-color:#ee3643;
+	/* не получилось фон сделать ,пока только цвет */
+
+}
+
+/*catalog styles end*/
 
 .footer-bottom
 {
-		background-color:#293449;
+	background-color:#293449;
 }
 
 .footer-info
@@ -294,10 +368,6 @@ body
 
 .footer-contacts span
 {
-	display:inline-block;
-	width:220px;
-	height:68px;
-	
 	font-size:30px;
 	text-align:center;
 	font-style: normal;
@@ -333,6 +403,9 @@ body
 
 .footer-navigation-goods
 {
+	margin-bottom:-17px;   /* убирание разьединения блоков */
+	padding-bottom:17px;
+	
 	list-style-type:none;
 }
 
@@ -389,8 +462,6 @@ body
 
 .footer-soc-links
 {
-	display:inline-block;
-	
 	padding:10px; /* прикинутый паддинг для вида ховера и актива */
 	
 	background-color:#212a3a;

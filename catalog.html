@@ -5,9 +5,10 @@
     <title>HTML Academy: Техномарт</title>
 	<link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-	<header>
+	<header class="header-page">
 	
 		<!-- <h1 disabled>Техномарт.Лучший интернет-магазин инструментов</h1>  как сделать этот заголовок активным но невидимым? -->
 		
@@ -34,7 +35,7 @@
 			
 			<div class="header-user-options">
 				<span class="visibility-hidden">Пользовательский профиль</span>
-				<p>Равшан Джамшутович</p>
+				<a href="#">Равшан Джамшутович</a>
 				<ul class="header-user-buttons">
 					<li><a href="#">Мои заказы</a></li>
 					<li><a href="#">Личный кабинет</a></li>
@@ -63,7 +64,7 @@
 		<section class="main-catalog-full">  <!-- Если в main будет еще контент,то думаю будет неплохой идеей разметить целую секцию под "подбор" товара? -->
 		<!-- <h2>Ознакомьтесь с нашими товарами!</h2> -->
 			<span class="visibility-hidden">Текущее местоположение на сайте</span>
-			<ul class="main-breadcrumbs ">
+			<ul class="main-breadcrumbs">
 				<li><a href="#">Main page</a></li>
 				<li><a href="#">Каталог</a></li>
 				<li><a href="#">Инструмент</a></li>
@@ -81,8 +82,8 @@
 			<div class="main-searching-menu">
 				<span class="visibility-hidden">Сортировка товаров по критериям</span>
 				<form method="get" action="https://echo.htmlacademy.ru">
-					<b>Производители:<b>
-          <label for="production-bosch">Bosch</label>
+					<b>Производители:</b>
+					<label for="production-bosch">Bosch</label>
 						<input id="production-bosch" type="checkbox" name="bosch">
 					
 					<label for="production-interskol">Интерскол</label>
@@ -91,7 +92,7 @@
 					<label for="production-makita">Makita</label>
 						<input id="production-makita" type="checkbox" name="Makita">
 					
-          <label for="production-Dewalt">Dewalt</label>
+					<label for="production-Dewalt">Dewalt</label>
 						<input id="production-Dewalt" type="checkbox" name="Dewalt">
 			
 					
@@ -101,14 +102,14 @@
 					
 					<b>Питание:<b>
 					
-            <label>
-              Аккумуляторные
+					<label>
+						Аккумуляторные
 					    <input id="production-supply-of" type="radio" name="power-supply" value="battery">
-					  </label>
+					</label>
             
 						<label>
-              Сетевые
-						  <input id="production-supply-of" type="radio" name="power-supply" value="cord">
+						Сетевые
+						<input id="production-supply-of" type="radio" name="power-supply" value="cord">
 					  </label>
 					
 					<input type="submit" value="Показать">
@@ -116,7 +117,7 @@
 				
 			</div>
 					<span class="visibility-hidden">Товары на текущей странице</span>
-					<ul>
+					<ul class="main-products">
 						<li>
 								<img src="img/snippet-18927-copy-2.jpg" width="127px" height="112px">
 								<h3>Перфоратор BOSCH BFG 3000</h3>
