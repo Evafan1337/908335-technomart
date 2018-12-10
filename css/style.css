@@ -37,7 +37,7 @@
 
 @font-face
 {
-	font-family:"PT Sans";
+	font-family:"PT Sans",'Tahoma',sans-serif;
 	src: url("../fonts/ptsans.woff") format("woff"),
 		url("../fonts/ptsans.woff2");
 	font-weight:normal;
@@ -46,7 +46,7 @@
 
 @font-face
 {
-	font-family:"PT Sans";
+	font-family:"PT Sans",'Tahoma',sans-serif;
 	src: url("../fonts/ptsansbold.woff") format("woff"),
 		url("../fonts/ptsansbold.woff2");
 	font-weight:bold;
@@ -149,7 +149,7 @@ a
 
 .header-middle-bottom
 {
-	background-color:#c3cbd2;
+	background-color:#f3f7f8;
 }
 
 .header-middle-bottom>p
@@ -244,7 +244,7 @@ a
 	font-size:16px;
 	
 	color:#32425c;
-	list-style:none;
+	text-decoration:underline;
 	background-color:transparent;
 }
 
@@ -301,7 +301,8 @@ a
 
 .main-breadcrumbs a
 {
-	font-family: 'PT Sans', sans-serif;
+	text-transform:uppercase;
+	font-family:"PT Sans",'Tahoma',sans-serif;
 	font-size:13px;
 	line-height:18px;
 	
@@ -310,6 +311,7 @@ a
 
 .main-catalog-full h2
 {
+	text-transform:uppercase;
 	line-height:30px;
 	font-size:30px;
 	
@@ -318,17 +320,19 @@ a
 
 .main-searching-menu
 {
-	font-family:'PT Sans' , sans-serif;
+	font-family:"PT Sans",'Tahoma',sans-serif;
 }
 
 .main-searching-menu b
 {
+	text-transform:uppercase;
 	line-height:30px;
 	font-weight:bold;
 }
 
 .main-searching-menu label
 {
+	text-transform:uppercase;
 	font-weight:normal;
 	line-height:20px;
 	font-size:15px;
@@ -344,7 +348,7 @@ a
 	border: 1px solid #e5e5e5;
     padding: 0;
 	
-	font-family:'PT Sans',sans-serif;
+	font-family:"PT Sans",'Tahoma',sans-serif;
 	font-size:13px;
 	line-height:18px;
 	
@@ -353,7 +357,7 @@ a
 
 .main-products
 {
-	font-family:'PT Sans' , sans-serif;
+	font-family:"PT Sans",'Tahoma',sans-serif;
 	list-style:none;
 }
 
@@ -387,26 +391,11 @@ a
 
 /* index before footer start */
 
-.main-contacts h2
-{
-	font-size:30px;
-	line-height:30px;
-}
-
 .main-contacts p
 {
-	font-family:'PT Sans', sans-serif;
+	font-family:"PT Sans",'Tahoma',sans-serif;
 	font-size:13px;
 	line-height:24px;
-}
-
-.main-contacts a
-{
-	font-size:14px;
-	line-height:18px;
-	
-	color:#ffffff;
-	background-color: #ee3643;
 }
 
 .main-contacts a:hover
@@ -419,15 +408,17 @@ a
 	background-color:#ba2732;
 }
 
+.main-contacts h2,
 .main-company h2
 {
 	font-size:30px;
 	line-height:30px;
+	text-transform:uppercase;
 }
 
 .main-company p
 {
-	font-family:'PT Sans', sans-serif;
+	font-family:"PT Sans",'Tahoma',sans-serif;
 	font-size:13px;
 	line-height:24px;
 }
@@ -438,10 +429,12 @@ a
 	line-height:20px;
 }
 
+.main-contacts a,
 .main-company a
 {
 	font-size:14px;
 	line-height:18px;
+	text-transform:uppercase;
 	
 	color:#ffffff;
 	background-color: #ee3643;
