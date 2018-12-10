@@ -1,27 +1,88 @@
 
+@font-face
+{
+	font-family:"Cuprum";
+	src: url("../fonts/cuprum.woff") format("woff"),
+		url("../fonts/cuprum.woff2");
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face
+{
+	font-family:"Cuprum";
+	src: url("../fonts/cuprumbold.woff") format("woff"),
+		url("../fonts/cuprumbold.woff2");
+	font-weight:bold;
+	font-style:normal;
+}
+
+@font-face
+{
+	font-family:"Cuprum";
+	src: url("../fonts/cuprumitalic.woff") format("woff"),
+		url("../fonts/cuprumitalic.woff2");
+	font-weight:normal;
+	font-style:italic;
+}
+
+@font-face
+{
+	font-family:"Cuprum";
+	src: url("../fonts/cuprumbolditalic.woff") format("woff"),
+		url("../fonts/cuprumbolditalic.woff2");
+	font-weight:bold;
+	font-style:italic;
+}
+
+@font-face
+{
+	font-family:"PT Sans";
+	src: url("../fonts/ptsans.woff") format("woff"),
+		url("../fonts/ptsans.woff2");
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face
+{
+	font-family:"PT Sans";
+	src: url("../fonts/ptsansbold.woff") format("woff"),
+		url("../fonts/ptsansbold.woff2");
+	font-weight:bold;
+	font-style:normal;
+}
+
+
+body
+{
+	margin:0;
+	padding:0;
+	
+		/*типографика*/
+	font-family: "Cuprum",'Arial',sans-serif;
+	font-size:17px;
+	font-weight:normal;
+	line-height:18px;
+		
+		/*оформление*/
+	color:#000000;
+	background-color:#ffffff;
+}
+
+a
+{
+	text-decoration:none;
+}
+
 .visibility-hidden
 {
 	visibility:hidden;
 }
 
-body
-{
-		/*типографика*/
-	font-family: 'Cuprum',sans-serif;
-	font-size:17px;
-		
-		/*оформление*/
-	background-color:#ffffff;
-}
-
-.header-page
-{
-	
-}
-
 .header-top
 {
-	height:42px;
+	height:84px;
 	background-color:#293449;
 }
 
@@ -31,6 +92,16 @@ body
 	
 	background-color:#ee3643;
 	box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+}
+
+.header-top-logo:hover
+{
+	background-color:#ca2c37;
+}
+
+.header-top-logo:active
+{
+	background-color:#ba2732;
 }
 
 .header-top a + span
@@ -45,50 +116,16 @@ body
 	text-decoration: none;
 }
 
-
-.header-top span
+.header-top label
 {
+	font-size:17px;
+	line-height:18px;
+	
 	color:#ffffff;
 }
 
-.header-top span:hover
-{
-	
-}
-
-.header-top span:active
-{
-	color:rgba(255, 255, 255, 0.6);
-}
-
-
-.header-top-favorites
-{
-
-}
-
-.header-top-favorites:hover
-{
-	
-}
-
-.header-top-favorites:active
-{
-	color:rgba(255, 255, 255, 0.6);
-}
-
-
-
-.header-top-cart
-{
-
-}
-
-.header-top-cart:hover
-{
-	
-}
-
+.header-top span:active,
+.header-top-favorites:active,
 .header-top-cart:active
 {
 	color:rgba(255, 255, 255, 0.6);
@@ -110,7 +147,6 @@ body
 	color:rgba(255, 255, 255, 0.5)
 }
 
-
 .header-middle-bottom
 {
 	background-color:#c3cbd2;
@@ -121,14 +157,11 @@ body
 	margin:0px;
 }
 
-.header-txt
-{
-	width:190px;
-}
-
 .header-italic-text
 {
+	line-height:23px;
 	font-size:16px;
+	font-style:italic;
 	
 	color:#ee3643;
 }
@@ -138,38 +171,35 @@ body
 {
 	
 	font-size:21px;
+	line-height:21px;
 	text-align:center;
 	
 	color:#ee3643;
 	text-decoration: none;
 	border:3px solid white;
-
 }
 
-.header-contacts-adress
+.header-contacts p
 {
+	line-height:24px;
 	font-size:14px;
 	
 	color:#32425c;
 }
-
 
 .header-user-links
 {
 	list-style-type:none;
 }
 
-
 .header-user-links a
 {
+	font-size:21px;
+	line-height:21px;
+	
 	color:#000000;
 	text-decoration: none;
 	background-color:#f4f7f9;
-}
-
-.header-user-links-sign
-{
-	
 }
 
 .header-user-links-sign:hover
@@ -180,11 +210,6 @@ body
 .header-user-links-sign:active
 {
 	color:rgba(0, 0, 0, 0.3);
-}
-
-.header-user-links-reg
-{
-
 }
 
 .header-user-links-reg:hover
@@ -201,12 +226,6 @@ body
 {
 	color:#000000;
 	background-color:#ffffff;
-	text-decoration:none;
-}
-
-.header-user-options a:hover
-{
-	
 }
 
 .header-user-options a:active
@@ -221,10 +240,12 @@ body
 
 .header-user-buttons a
 {
+	line-height:18px;
 	font-size:16px;
 	
 	color:#32425c;
 	list-style:none;
+	background-color:transparent;
 }
 
 .header-user-buttons a:hover
@@ -242,25 +263,13 @@ body
 	list-style-type:none;
 }
 
-.header-navigation-links a
-{
-
-}
-
-.header-navigation-links a  /* временное определение кнопок меню */
+.header-navigation-links   /* временное определение кнопок меню */
 {	
-	
-	text-align:center;
-	
 	background-color:#32425c;
 	box-shadow: inset 0px -5px 0 0 #293449;
 }
 
-.header-navigation-links a:hover
-{
-	background-color:#293449;
-}
-
+.header-navigation-links a:hover,
 .header-navigation-links a:focus
 {
 	background-color:#293449;
@@ -271,8 +280,6 @@ body
 	color: rgba(255, 255, 255, 0.5); 
 	background-color:#293449;
 }
-
-
 
 .header-navigation-links a
 {
@@ -289,14 +296,21 @@ body
 
 .main-breadcrumbs li
 {
+	list-style:none;
+}
+
+.main-breadcrumbs a
+{
 	font-family: 'PT Sans', sans-serif;
 	font-size:13px;
+	line-height:18px;
 	
-	list-style:none;
+	color:#000000;
 }
 
 .main-catalog-full h2
 {
+	line-height:30px;
 	font-size:30px;
 	
 	background-color:#f2f6f8;
@@ -309,15 +323,33 @@ body
 
 .main-searching-menu b
 {
-	font-weight:700;
+	line-height:30px;
+	font-weight:bold;
 }
 
 .main-searching-menu label
 {
-	font-weight:400;
+	font-weight:normal;
+	line-height:20px;
 	font-size:15px;
 }
 
+.main-searching-menu label:hover
+{
+	color:red;
+}
+
+.main-searching-menu-submit
+{
+	border: 1px solid #e5e5e5;
+    padding: 0;
+	
+	font-family:'PT Sans',sans-serif;
+	font-size:13px;
+	line-height:18px;
+	
+	background-color:#ffffff;
+}
 
 .main-products
 {
@@ -332,6 +364,7 @@ body
 
 .main-products h3
 {
+	line-height:20px;
 	font-weight:700;
 	font-size:18px;
 }
@@ -339,42 +372,110 @@ body
 .main-products del
 {
 	color:#999999;
-	
 }
 
 .main-products a
 {
 	color:#ffffff;
-	text-decoration:none;
-	
+
 	background-color:#ee3643;
 	/* не получилось фон сделать ,пока только цвет */
-
 }
 
 /*catalog styles end*/
 
+
+/* index before footer start */
+
+.main-contacts h2
+{
+	font-size:30px;
+	line-height:30px;
+}
+
+.main-contacts p
+{
+	font-family:'PT Sans', sans-serif;
+	font-size:13px;
+	line-height:24px;
+}
+
+.main-contacts a
+{
+	font-size:14px;
+	line-height:18px;
+	
+	color:#ffffff;
+	background-color: #ee3643;
+}
+
+.main-contacts a:hover
+{
+	background-color:#ca2c37;
+}
+
+.main-contacts a:active
+{
+	background-color:#ba2732;
+}
+
+.main-company h2
+{
+	font-size:30px;
+	line-height:30px;
+}
+
+.main-company p
+{
+	font-family:'PT Sans', sans-serif;
+	font-size:13px;
+	line-height:24px;
+}
+
+.main-company li
+{
+	font-size:18px;
+	line-height:20px;
+}
+
+.main-company a
+{
+	font-size:14px;
+	line-height:18px;
+	
+	color:#ffffff;
+	background-color: #ee3643;
+}
+
+.main-company a:hover
+{
+	background-color:#ca2c37;
+}
+
+.main-company a:active
+{
+	background-color:#ba2732;
+}
+
+/* index before footer end */
 .footer-bottom
 {
 	background-color:#293449;
 }
 
-.footer-info
-{
-	font-size:18px;
-	
-	color:#ffffff;
-}
-
 .footer-contacts span
 {
-	font-size:30px;
-	text-align:center;
-	font-style: normal;
-	
 	color:#ffffff;
 	background-color:#ee3643;
 	box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+}
+
+.footer-contacts p
+{
+	font-size:18px;
+	line-height:24px;
+	
+	color:#f1f5f7;
 }
 
 .footer-navigation-links
@@ -384,10 +485,10 @@ body
 
 .footer-navigation-links a
 {
+	line-height:24px;
 	font-size:18px;
 	
 	color:white;
-	text-decoration: none;
 }
 
 .footer-navigation-links a:hover
@@ -411,13 +512,15 @@ body
 
 .footer-navigation-goods a
 {
+	line-height:24px;
 	font-size:18px;
 	
 	color:#ffd180;
 	text-decoration: none;
 }
 
-.footer-navigation-goods a:hover
+.footer-navigation-goods a:hover,
+.footer-production a:hover
 {
 	text-decoration:underline;
 }
@@ -435,32 +538,34 @@ body
 
 .footer-copyright p
 {
+	font-size:16px;
+	line-height:18px;
+	
 	color:#ffffff;
 }
 
 .footer-production dt
 {
+	font-size:16px;
+	line-height:18px;
+	
 	color:#ffffff;
 }
 
 .footer-production a
 {
+	font-size:16px;
+	line-height:18px;
+	
 	color:#ffd180;
-	text-decoration:none;
-}
-
-.footer-production a:hover
-{
-	text-decoration:underline;
 }
 
 .footer-production a:active
 {
-	text-decoration:none;
 	color:#ee3643;
 }
 
-.footer-soc-links
+.footer-socialmedia a
 {
 	padding:10px; /* прикинутый паддинг для вида ховера и актива */
 	
@@ -468,7 +573,7 @@ body
 	border-radius:25px;
 }
 
-.footer-soc-links:hover
+.footer-socialmedia a:hover
 {
 	background-color:#ee3643;
 }
